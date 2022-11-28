@@ -1,4 +1,5 @@
 <?php
+
 namespace app\commands;
 
 use app\models\Order;
@@ -45,7 +46,7 @@ class OrderController extends Controller
      */
     public function actionUpdate(string $path = '')
     {
-        $dataString = file_get_contents(Yii::getAlias('@app/'. $path));
+        $dataString = file_get_contents(Yii::getAlias('@app/' . $path));
         $data = Json::decode($dataString, true);
 
         if (isset($data['orders'])) {

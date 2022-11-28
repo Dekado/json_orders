@@ -3,6 +3,7 @@
 В качестве СУБД использована sqlite.
 
 Для запуска проекта необходимо:
+
 1. `git clone https://github.com/Dekado/json_orders.git`
 2. Перейти в папку проекта и затем `composer install`
 3. `yii migrate`

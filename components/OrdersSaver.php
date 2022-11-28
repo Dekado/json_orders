@@ -32,7 +32,7 @@ class OrdersSaver extends Component
             }
 
             if (!$model->validate()) {
-                $message = 'Ошибки валидации заказа ID: ' .$order['id']. ' ' . print_r($model->getErrors(), true);
+                $message = 'Ошибки валидации заказа ID: ' . $order['id'] . ' ' . print_r($model->getErrors(), true);
                 echo $message . PHP_EOL;
                 Yii::warning($message);
             }
