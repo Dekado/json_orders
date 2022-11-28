@@ -29,7 +29,7 @@ class Order extends \yii\db\ActiveRecord
         return [
             [
                 'class' => TimestampBehavior::class,
-                'createdAtAttribute' => 'created_at',
+                'createdAtAttribute' => false,
                 'updatedAtAttribute' => 'updated_at',
                 'value' => new Expression("datetime('now')"),
             ]
